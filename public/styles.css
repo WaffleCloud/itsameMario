@@ -15,7 +15,6 @@ body {
 
 .button-container button {
     border: none;
-    background-color: transparent;
     color: #fff;
     padding 5px;
     background-color: #0aad02;
@@ -40,6 +39,7 @@ form input[type=submit]{
 
 h3 {
     color: #fff;
+    margin: 2px;
 }
 
 .hidden {

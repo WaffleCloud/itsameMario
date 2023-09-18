@@ -8,8 +8,8 @@
     <body>
         <div class="modal" id="modal">
             <div class="button-container">
-                <button id="register-button">Register</button>
-                <button id="login-button" class="not-active">Login</button>
+                <button onclick="toggleModal(event)" id="register-button">Register</button>
+                <button onclick="toggleModal(event)" id="login-button" class="not-active">Login</button>
             </div>
         
             <form onsubmit="register(event)" id="register-form">
@@ -23,7 +23,7 @@
                 <input type="submit" value="Sign Up">
             </form>
 
-            <form onsubmit="" id="login-form" class="hidden">
+            <form onsubmit="login(event)" id="login-form" class="hidden">
                 <label for="login-email"></label>
                 <input type="email" id="login-email" placeholder="Enter email" required>
                 <label for="login-password">Password</label>
@@ -34,7 +34,7 @@
         </div>
 
         <div class="info-container">
-            <button id="logout-button" class="hidden">Log out</button>
+            <button id="logout-button" class="hidden" onclick="logout()">Log out</button>
             <h3 id="username"></h3>
             <h3 id="highscore-tag" class="hidden">
                 Highscore: <span id="highscore"></span> 
